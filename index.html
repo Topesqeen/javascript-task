@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>A function that takes one parameter</h2>
+
+  <script>
+    
+function number(num){
+  var array = [];
+  for (var i = 1; i <= num; i++) {
+    if (i%2 ===0 && i%3===0 && i%5===0) {
+      array.push("yu-gi-oh");
+    }else if(i%2===0 && i%3===0){
+      array.push("yu-gi");
+    }else if(i%2===0 && i%5===0){
+      array.push("yu-oh");
+    }else if(i%3===0 && i%5===0){
+      array.push("gi-oh");
+    } else if(i%2===0){
+      array.push("yu");
+    } else if(i%3===0){
+      array.push("gi");
+    } else if(i%5===0){
+      array.push("oh");
+    }else{
+      array.push(i);
+    }
+  }
+  return array;
+}
+console.log(number(50));
+  </script>
+</body>
+</html>
